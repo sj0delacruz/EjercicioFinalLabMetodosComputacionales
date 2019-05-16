@@ -29,6 +29,9 @@ void bifurcation_diagram(float F_D0, float F_D1, string filename){
     
         for (int i=0; i<n_puntos;i++){
 
+            if(i>n_puntos*(1.0/2) && i%600==0){
+                outfile << F_D <<" "<< theta << endl;
+            }
             //siguiente paso
             w=w-(sin(theta)+g*w-F_D*sin(w_D*t))*dt;
             theta=theta+w*dt;
