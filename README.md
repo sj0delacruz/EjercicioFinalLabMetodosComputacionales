@@ -1,3 +1,3 @@
 # EjercicioFinalLabMetodosComputacionales
-- Samir de la Cruz
-- Paula Guzmán
+- Samir de la Cruz [201620754]
+- Paula Guzmán []
