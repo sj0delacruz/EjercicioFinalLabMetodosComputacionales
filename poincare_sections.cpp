@@ -18,8 +18,9 @@ void EulerCromer(float F_D, string filename){
     
     
     ofstream outfile1;
+    ofstream outfile2;
     outfile1.open("d1_"+filename);
-    
+    outfile2.open("d2_"+filename);
     /*
     condiciones iniciales
     */
@@ -48,4 +49,5 @@ void EulerCromer(float F_D, string filename){
     }
     
     outfile1.close();
+    outfile2.close();
 }
