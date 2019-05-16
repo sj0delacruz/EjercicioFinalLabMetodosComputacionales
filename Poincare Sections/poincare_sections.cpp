@@ -29,7 +29,9 @@ void EulerCromer(float F_D, string filename){
     double g=0.5,w_D=2.0/3.0, dt=(2*M_PI/w_D)*(1000.0/n_puntos);
 
     for (int i=0; i<n_puntos;i++){
-        
+        if(i>n_puntos*(1.0/2) && i%600==0){
+            outfile2 << theta <<" "<< w << endl;
+        }
         
         if(i<n_puntos*(1.0/18) && i%10==0){
             outfile1 << t <<" "<< theta <<" "<< w << endl;

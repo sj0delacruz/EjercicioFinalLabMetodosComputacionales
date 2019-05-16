@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
 F_D=[1.4,1.44,1.465]
 for i in range(3):
